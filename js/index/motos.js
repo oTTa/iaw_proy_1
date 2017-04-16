@@ -183,29 +183,50 @@ function filtrar(motos){
 			if (es_moto_seleccionada(motos[i], tipo, marca, cilindraje,modelo)){
 				encontre=true;
 				moto_select=motos[i];
-				$("#imagen_moto").attr("src", motos[i].url_imagenes[0]);
+
+				$("#1").slideUp(200,function() {
+					  	$("#imagen_moto").attr("src", moto_select.url_imagenes[color_select]);
+					    $('#1').slideDown(200,function(){
+					    	$('#1').css('display', '');
+					    });
+   				});
+
 				$("#video").attr("src", motos[i].url_video);
 				$("#precio").text('$'+motos[i].precio);
 				$("#estrellas").empty();
 				$("#descargar_json").attr('href',"data:text/plain;charset=UTF-8," + encodeURIComponent(JSON.stringify(moto_select,null,2)));
+
 				for (var j = 0; j < motos[i].rating; j++) {
 					$("#estrellas").append('<span class="estrella glyphicon glyphicon-star" aria-hidden="true"></span>');
 				}
 				for (var j = 0; j < (5-motos[i].rating); j++) {
 					$("#estrellas").append('<span class="estrella glyphicon glyphicon-star-empty" aria-hidden="true"></span>');
 				}
+
 				for (var j = 0; j < motos[i].colores.length; j++) {
 					$("#colores").append('<div id="color'+j+'" data-color="'+j+'" class="box_color"></div>');
 					$("#color"+j).css('background-color', motos[i].colores[j]);
+
 					$("#color"+j).click(function() {
 					  var color= $(this).data("color");
-					  $("#imagen_moto").attr("src", moto_select.url_imagenes[color]);
+
+					  $("#1").slideUp(200,function() {
+					  	$("#imagen_moto").attr("src", moto_select.url_imagenes[color]);
+					    $('#1').slideDown(200,function(){
+					    	$('#1').css('display', '');
+					    });
+
+   				  	  });
+
+					  
 					  $(this).css('border', '3px solid #009999');
 					  $("#color"+color_select).css('border', '1px solid black');
 					  $("#descargar_moto").attr('href',moto_select.url_imagenes[color]);
 					  color_select= color;
 					});
+
 					if (j==0){
+						color_select = 0;
 						$("#color"+0).css('border', '3px solid #009999');
 						$("#descargar_moto").attr('download',true);
 						$("#descargar_moto").attr('href',moto_select.url_imagenes[0]);
