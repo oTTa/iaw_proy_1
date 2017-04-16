@@ -80,6 +80,7 @@ var motos_json = {
 			};
 var color_select = 0;
 var moto_select = null;
+var marcadores = [];
 
 $(document).ready(function() {
 	cargar_datos(motos_json.motos);
@@ -135,6 +136,9 @@ function limpiar_busqueda(){
 	$("#descargar_moto").removeAttr('download');
 	$("#descargar_moto").removeAttr('href');
 	$("#descargar_json").removeAttr('href');
+	$("#modelo").attr('disabled',true);
+	$('#modelo').selectpicker('refresh');
+	limpiar_mapa();
 }
 
 function filtrar(motos){
@@ -165,7 +169,7 @@ function filtrar(motos){
 					$("#marca").append('<option data-tokens="' + motos[i].marca + '">' + motos[i].marca + '</option>');
 					$("#cilindraje").append('<option data-tokens="' + motos[i].cilindraje + '">' + motos[i].cilindraje + 'cc</option>');
 					if(tipo!="" && marca!="" && cilindraje!=""){
-						$("#modelo").attr('disabled',false);
+						$("#modelo").removeAttr('disabled');
 						$("#modelo").append('<option data-tokens="' + motos[i].modelo + '">' + motos[i].modelo + '</option>');
 					}
 			}
@@ -232,6 +236,8 @@ function filtrar(motos){
 						$("#descargar_moto").attr('href',moto_select.url_imagenes[0]);
 					}
 				}
+
+				agregar_venderdores_mapa(motos[i].vendedores);
 			}
 			i++;
 		}
@@ -251,4 +257,61 @@ function es_moto_seleccionada(moto, tipo, marca, cilindraje, modelo){
 		return true;
 	else
 		return false;
+}
+
+function agregar_venderdores_mapa(vendedores){
+	limpiar_mapa();
+	var mapCanvas = document.getElementById("googleMap");
+	var centrado = new google.maps.LatLng(vendedores[0].latitud,vendedores[0].longitud);
+	var mapOptions = {center: centrado, zoom: 15};
+	map = new google.maps.Map(mapCanvas, mapOptions);
+	var html;
+	var icon = {
+		    url: "images/marker_moto.png", // url
+		    scaledSize: new google.maps.Size(50, 50), // scaled size
+		    origin: new google.maps.Point(0,0), // origin
+		    anchor: new google.maps.Point(0, 0) // anchor
+	};
+
+	for (var i = 0; i < vendedores.length; i++) {
+		var marker;
+		var myCenter = new google.maps.LatLng(vendedores[i].latitud,vendedores[i].longitud);
+		html = preparar_info_window(vendedores[i]);
+						  
+		var infowindow = new google.maps.InfoWindow();
+
+		
+
+		marker = new google.maps.Marker({
+						  					position:myCenter,
+						  					icon: icon,
+						  					contentString: html,
+						  					map: map,
+				  						});
+						 
+		var infowindow = new google.maps.InfoWindow({});
+
+		marker.addListener('click', function() {
+		    infowindow.setContent(this.contentString);
+		    infowindow.open(map, this);
+		});
+
+		marcadores.push(marker);
+	}
+
+}
+
+function preparar_info_window(vendedor){
+	html="<h3 style='text-aling:center'>"+vendedor.nombre+"</h3>";
+	html+="<p>Telefono: "+vendedor.telefono+"</p>";
+	html+="<p>Dirección: "+vendedor.direccion+"</p>";
+	return html;
+}
+
+function limpiar_mapa(){
+	var marcador = marcadores.pop();
+	while (marcador!=null){
+		marcador.setMap(null);
+		var marcador = marcadores.pop();
+	}
 }
