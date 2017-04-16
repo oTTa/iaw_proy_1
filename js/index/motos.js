@@ -13,8 +13,7 @@ var motos_json = {
 												"images/motos/naked/yamaha/125/YBR125_ED/negro.jpg",
 												"images/motos/naked/yamaha/125/YBR125_ED/rojo.jpg"
 											   ],
-								url_minis : ["images/motos/naked/yamaha/125/YBR125_ED/"],
-								url_video : "https://www.youtube.com/embed/lleTv_EnyMU",
+								url_video : "https://www.youtube.com/embed/vUJ4SeEUMpg",
 								vendedores : [
 											{
 												id: 1,
@@ -22,7 +21,7 @@ var motos_json = {
 												direccion:"Brandsen 234",
 												telefono:"0291 456-5606",
 												latitud: -38.720988,
-												longitud: -62.256835,
+												longitud: -62.256835
 											},
 											{
 												id:2,
@@ -30,7 +29,7 @@ var motos_json = {
 												direccion:"Av. Parchappe 1250",
 												telefono:"0291 455-7067",
 												latitud: -38.724319,
-												longitud:  -62.251674,
+												longitud:  -62.251674
 											},
 											{
 												id:3,
@@ -38,7 +37,7 @@ var motos_json = {
 												direccion:"Av. Gral. D. Cerri 765",
 												telefono:"0291 452-8726",
 												latitud: -38.722134,
-												longitud: -62.255279,
+												longitud: -62.255279
 											}
 											]
 							},
@@ -48,14 +47,13 @@ var motos_json = {
 								marca: "BMW",
 								cilindraje: 800,
 								modelo:  "F 800 Gs",
-								colores: ["#fcfcfc","#ffffff","#cc0000"],
+								colores: ["#cccccc","#ffffff","#cc0000"],
 								rating: 5,
 								precio: 250000,
 								url_imagenes : ["images/motos/touring/bmw/800/F_800_Gs/blanco_metalizado.jpg",
 												"images/motos/touring/bmw/800/F_800_Gs/blanco.jpg",
 												"images/motos/touring/bmw/800/F_800_Gs/rojo.jpg"
 											   ],
-								url_minis : ["images/motos/touring/bmw/800/F_800_Gs/"],
 								url_video : "https://www.youtube.com/embed/BaQiI3vkJdA",
 								vendedores : [
 											{
@@ -64,7 +62,7 @@ var motos_json = {
 												direccion:"Villarino 555",
 												telefono:"0291 451-6792",
 												latitud: -38.728063,
-												longitud: -62.268129,
+												longitud: -62.268129
 											}, 
 											{
 												id:3,
@@ -72,15 +70,178 @@ var motos_json = {
 												direccion:"Av. Gral. D. Cerri 765",
 												telefono:"0291 452-8726",
 												latitud: -38.722134,
-												longitud: -62.255279,
+												longitud: -62.255279
+											}
+											]
+							},
+							{
+								id: 3,
+								tipo: "Scooters",
+								marca: "Yamaha",
+								cilindraje: 110,
+								modelo:  "New Crypton",
+								colores: ["#0000ff","#ffffff","#ff0000","#000000"],
+								rating: 3,
+								precio: 24900,
+								url_imagenes : ["images/motos/scooters/yamaha/110/new_crypton/azul.jpg",
+												"images/motos/scooters/yamaha/110/new_crypton/blanco.jpg",
+												"images/motos/scooters/yamaha/110/new_crypton/rojo.jpg",
+												"images/motos/scooters/yamaha/110/new_crypton/negro.jpg"
+											   ],
+								url_video : "https://www.youtube.com/embed/cTQgJauMgTY",
+								vendedores : [
+											{
+												id:4,
+												nombre:"MotoZone",
+												direccion:"Villarino 555",
+												telefono:"0291 451-6792",
+												latitud: -38.728063,
+												longitud: -62.268129
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											}
+											]
+							},
+							{
+								id: 4,
+								tipo: "Chopper",
+								marca: "Harley Davidson",
+								cilindraje: 883,
+								modelo:  "Iron",
+								colores: ["#ffdf80","#000000","#ff0000"],
+								rating: 4,
+								precio: 299999,
+								url_imagenes : ["images/motos/chopper/Harley_Davidson/883/IRON_883/crema.jpg",
+												"images/motos/chopper/Harley_Davidson/883/IRON_883/negro.jpg",
+												"images/motos/chopper/Harley_Davidson/883/IRON_883/rojo.jpg"
+											   ],
+								url_video : "https://www.youtube.com/embed/NcBqvsiw_Yc",
+								vendedores : [
+											{
+												id:4,
+												nombre:"MotoZone",
+												direccion:"Villarino 555",
+												telefono:"0291 451-6792",
+												latitud: -38.728063,
+												longitud: -62.268129
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											},
+											{
+												id:5,
+												nombre:"AUTRAL MOTOS",
+												direccion:"Alvarado 824",
+												telefono:"0291 452-1800",
+												latitud: -38.708323,
+												longitud: -62.271433
+											}
+											]
+							},
+							{
+								id: 5,
+								tipo: "Chopper",
+								marca: "Harley Davidson",
+								cilindraje: 1450,
+								modelo:  "Road King",
+								colores: ["#0000ff","#cccccc","#ff0000","#1a1a1a"],
+								rating: 5,
+								precio: 899999,
+								url_imagenes : ["images/motos/chopper/Harley_Davidson/1450/ROAD_KING/azul.jpg",
+												"images/motos/chopper/Harley_Davidson/1450/ROAD_KING/gris.jpg",
+												"images/motos/chopper/Harley_Davidson/1450/ROAD_KING/rojo.jpg",
+												"images/motos/chopper/Harley_Davidson/1450/ROAD_KING/negro_opaco.jpeg"
+											   ],
+								url_video : "https://www.youtube.com/embed/8Xrk8plkTmA",
+								vendedores : [
+											{
+												id:4,
+												nombre:"MotoZone",
+												direccion:"Villarino 555",
+												telefono:"0291 451-6792",
+												latitud: -38.728063,
+												longitud: -62.268129
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											},
+											{
+												id:5,
+												nombre:"AUTRAL MOTOS",
+												direccion:"Alvarado 824",
+												telefono:"0291 452-1800",
+												latitud: -38.708323,
+												longitud: -62.271433
+											}
+											]
+							},
+							{
+								id: 6,
+								tipo: "Chopper",
+								marca: "Suzuki",
+								cilindraje: 125,
+								modelo:  "GN 125",
+								colores: ["#0000ff","#000000"],
+								rating: 3,
+								precio: 32499,
+								url_imagenes : ["images/motos/chopper/Suziki/125/Gn_125/azul.png",
+												"images/motos/chopper/Suziki/125/Gn_125/negro.jpg",
+											   ],
+								url_video : "https://www.youtube.com/embed/NU8O5oYpISw",
+								vendedores : [
+											{
+												id:4,
+												nombre:"MotoZone",
+												direccion:"Villarino 555",
+												telefono:"0291 451-6792",
+												latitud: -38.728063,
+												longitud: -62.268129
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											},
+											{
+												id:5,
+												nombre:"AUTRAL MOTOS",
+												direccion:"Alvarado 824",
+												telefono:"0291 452-1800",
+												latitud: -38.708323,
+												longitud: -62.271433
 											}
 											]
 							}
 						]
 			};
+
+
 var color_select = 0;
 var moto_select = null;
 var marcadores = [];
+
+var marcas = [];
+var tipos = [];
+var cilindrajes = [];
 
 $(document).ready(function() {
 	cargar_datos(motos_json.motos);
@@ -104,16 +265,27 @@ function cargar_datos(){
 	$("#marca").empty();
 	$("#cilindraje").empty();
 	$("#modelo").empty();
+	marcas = [];
+    tipos = [];
+    cilindrajes = [];
 
 	$("#tipo").append('<option data-tokens=""></option>');
 	$("#marca").append('<option data-tokens=""></option>');
 	$("#cilindraje").append('<option data-tokens=""></option>');
 	$("#modelo").append('<option data-tokens=""></option>');
 	for (var i = 0; i < motos.length; i++) {
-		$("#tipo").append('<option data-tokens="' + motos[i].tipo + '">' + motos[i].tipo + '</option>');
-		$("#marca").append('<option data-tokens="' + motos[i].marca + '">' + motos[i].marca + '</option>');
-		$("#cilindraje").append('<option data-tokens="' + motos[i].cilindraje + '">' + motos[i].cilindraje + 'cc</option>');
-
+		if (!existe_opcion(tipos,motos[i].tipo)){
+			$("#tipo").append('<option data-tokens="' + motos[i].tipo + '">' + motos[i].tipo + '</option>');
+			tipos.push(motos[i].tipo);
+		}
+		if (!existe_opcion(marcas,motos[i].marca)){
+			$("#marca").append('<option data-tokens="' + motos[i].marca + '">' + motos[i].marca + '</option>');
+			marcas.push(motos[i].marca);
+		}
+		if (!existe_opcion(cilindrajes,motos[i].cilindraje)){
+			$("#cilindraje").append('<option data-tokens="' + motos[i].cilindraje + '">' + motos[i].cilindraje + 'cc</option>');
+			cilindrajes.push(motos[i].cilindraje);
+		}
 	}
 	$("#tipo").selectpicker('refresh');
 	$("#marca").selectpicker('refresh');
@@ -151,6 +323,9 @@ function filtrar(motos){
 	$("#marca").empty();
 	$("#cilindraje").empty();
 	$("#modelo").empty();
+	marcas = [];
+    tipos = [];
+    cilindrajes = [];
 
 	if (tipo=="") 
 		$("#tipo").append('<option data-tokens=""></option>');
@@ -163,11 +338,23 @@ function filtrar(motos){
 
 	if (modelo==""){
 		$("#modelo").append('<option data-tokens=""></option>');
+
 		for (var i = 0; i < motos.length; i++) {
 			if (cumple_filtrado(motos[i], tipo, marca, cilindraje)){
-					$("#tipo").append('<option data-tokens="' + motos[i].tipo + '">' + motos[i].tipo + '</option>');
-					$("#marca").append('<option data-tokens="' + motos[i].marca + '">' + motos[i].marca + '</option>');
-					$("#cilindraje").append('<option data-tokens="' + motos[i].cilindraje + '">' + motos[i].cilindraje + 'cc</option>');
+
+					if (!existe_opcion(tipos,motos[i].tipo)){
+						$("#tipo").append('<option data-tokens="' + motos[i].tipo + '">' + motos[i].tipo + '</option>');
+						tipos.push(motos[i].tipo);
+					}
+					if (!existe_opcion(marcas,motos[i].marca)){
+						$("#marca").append('<option data-tokens="' + motos[i].marca + '">' + motos[i].marca + '</option>');
+						marcas.push(motos[i].marca);
+					}
+					if (!existe_opcion(cilindrajes,motos[i].cilindraje)){
+						$("#cilindraje").append('<option data-tokens="' + motos[i].cilindraje + '">' + motos[i].cilindraje + 'cc</option>');
+						cilindrajes.push(motos[i].cilindraje);
+					}
+
 					if(tipo!="" && marca!="" && cilindraje!=""){
 						$("#modelo").removeAttr('disabled');
 						$("#modelo").append('<option data-tokens="' + motos[i].modelo + '">' + motos[i].modelo + '</option>');
@@ -303,8 +490,8 @@ function agregar_venderdores_mapa(vendedores){
 
 function preparar_info_window(vendedor){
 	html="<h3 style='text-aling:center'>"+vendedor.nombre+"</h3>";
-	html+="<p>Telefono: "+vendedor.telefono+"</p>";
-	html+="<p>Dirección: "+vendedor.direccion+"</p>";
+	html+="<p><strong>Telefono:</strong> "+vendedor.telefono+"</p>";
+	html+="<p><strong>Dirección:</strong> "+vendedor.direccion+"</p>";
 	return html;
 }
 
@@ -314,4 +501,16 @@ function limpiar_mapa(){
 		marcador.setMap(null);
 		var marcador = marcadores.pop();
 	}
+}
+
+function existe_opcion(opciones,valor){
+	var existe=false;
+	i=0;
+	while (i<opciones.length && !existe) {
+        if(opciones[i]==valor)
+        	existe=true;
+        console.log(opciones[i]+" - "+ valor +" - " + existe);
+        i++;
+    }
+    return existe
 }
