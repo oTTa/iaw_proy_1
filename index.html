@@ -52,7 +52,6 @@
     </nav>
 -->
 <video id="bgvid" playsinline autoplay muted loop>
-  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 <source src="videos/motos.mp4" type="video/mp4">
 </video>
 
@@ -70,25 +69,25 @@
           <div id="selectores" style="text-align: center">
 
             <div class="form-group">
-              <strong><p style="text-align: center">Tipo</p></strong>
+              <p style="text-align: center"><strong>Tipo</strong></p>
               <select id="tipo" class="selectpicker" data-style="btn-primary" data-live-search="true">
               </select>
             </div>
 
             <div class="form-group">
-              <strong><p style="text-align: center">Marca</p></strong>
+              <p style="text-align: center"><strong>Marca</strong></p>
               <select id="marca" class="selectpicker" data-style="btn-primary" data-live-search="true">
               </select>
             </div>
 
             <div class="form-group">            
-              <strong><p style="text-align: center">Cilindraje</p></strong>
+              <p style="text-align: center"><strong>Cilindraje</strong></p>
               <select id="cilindraje" class="selectpicker" data-style="btn-primary" data-live-search="true">
               </select>
             </div>
 
             <div class="form-group">
-              <strong><p style="text-align: center">Modelo</p></strong>
+              <p style="text-align: center"><strong>Modelo</strong></p>
               <select id="modelo" class="selectpicker" data-style="btn-primary" data-live-search="true" disabled>
               </select>
             </div>
@@ -96,7 +95,7 @@
           </div>
           
           <div>
-            <strong><p>Colores:</p></strong>
+            <p><strong>Colores:</strong></p>
             <div id="colores" class="row">
               
             </div>
@@ -122,7 +121,7 @@
 
                 <div class="tab-content ">
                   <div class="tab-pane active" id="1">
-                    <img src="images/moto.png" class="img-thumbnail img-responsive" id="imagen_moto"> 
+                    <img src="images/moto.png" class="img-thumbnail img-responsive" id="imagen_moto" alt="Moto"> 
                   </div>
                   <div class="tab-pane" id="2">
                     <div id="video_moto" class="embed-responsive embed-responsive-4by3">
@@ -148,9 +147,9 @@
 
         <div class="col-md-12" id="botones">
           <button type="button" class="col-md-6 col-xs-12 btn btn-danger" onclick="limpiar_busqueda();" ><span class="glyphicon glyphicon-erase" aria-hidden="true"></span> Nueva busqueda</button>
-          <a href="#map" type="button" class="col-md-6 col-xs-12 btn btn-info" ><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Ver puntos de venta</a>
-          <a id="descargar_json" type="button" class="col-md-6 col-xs-12 btn btn-default" download="moto.json"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Descargar JSON</a>
-          <a id="descargar_moto" type="button" class="col-md-6 col-xs-12 btn btn-success"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Descargar Moto</a>
+          <a href="#map"  class="col-md-6 col-xs-12 btn btn-info" ><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Ver puntos de venta</a>
+          <a id="descargar_json"  class="col-md-6 col-xs-12 btn btn-default" download="moto.json"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Descargar JSON</a>
+          <a id="descargar_moto" class="col-md-6 col-xs-12 btn btn-success"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> Descargar Moto</a>
        </div>
         
         <hr>
