@@ -230,6 +230,172 @@ var motos_json = {
 												longitud: -62.271433
 											}
 											]
+							},
+							{
+								id: 7,
+								tipo: "Cross",
+								marca: "Yamaha",
+								cilindraje: 125,
+								modelo:  "XTZ 125",
+								colores: ["#0000ff","#000000","#ffffff"],
+								rating: 3,
+								precio: 46500,
+								url_imagenes : ["images/motos/cross/yamaha/125/xtz125/azul.jpg",
+												"images/motos/cross/yamaha/125/xtz125/negro.jpg",
+												"images/motos/cross/yamaha/125/xtz125/blanco.jpg"
+											   ],
+								url_video : "https://www.youtube.com/embed/7ozKtKojWe8",
+								vendedores : [
+											{
+												id:4,
+												nombre:"MotoZone",
+												direccion:"Villarino 555",
+												telefono:"0291 451-6792",
+												latitud: -38.728063,
+												longitud: -62.268129
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											},
+											{
+												id: 1,
+												nombre:"ASSEN MOTOS",
+												direccion:"Brandsen 234",
+												telefono:"0291 456-5606",
+												latitud: -38.720988,
+												longitud: -62.256835
+											}
+											]
+							},
+							{
+								id: 8,
+								tipo: "Scooters",
+								marca: "Suzuki",
+								cilindraje: 125,
+								modelo:  "AN125",
+								colores: ["#b3ecff","#c6c5c4","#000000"],
+								rating: 2,
+								precio: 40790,
+								url_imagenes : ["images/motos/scooters/suzuki/125/AN125/celeste.jpg",
+												"images/motos/scooters/suzuki/125/AN125/gris.jpg",
+												"images/motos/scooters/suzuki/125/AN125/negro.jpg"
+											   ],
+								url_video : "https://www.youtube.com/embed/CJNbDcFzMnM",
+								vendedores : [
+											{
+												id:5,
+												nombre:"AUTRAL MOTOS",
+												direccion:"Alvarado 824",
+												telefono:"0291 452-1800",
+												latitud: -38.708323,
+												longitud: -62.271433
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											},
+											{
+												id: 1,
+												nombre:"ASSEN MOTOS",
+												direccion:"Brandsen 234",
+												telefono:"0291 456-5606",
+												latitud: -38.720988,
+												longitud: -62.256835
+											}
+											]
+							},
+							{
+								id: 9,
+								tipo: "Cross",
+								marca: "Honda",
+								cilindraje: 250,
+								modelo:  "XR 250 Tornado",
+								colores: ["#ffffff","#000000","#cc0000"],
+								rating: 4,
+								precio: 84000,
+								url_imagenes : ["images/motos/cross/honda/250/XR250_tornado/blanco.jpg",
+												"images/motos/cross/honda/250/XR250_tornado/negro.jpg",
+												"images/motos/cross/honda/250/XR250_tornado/rojo.jpg"
+											   ],
+								url_video : "https://www.youtube.com/embed/a2btxvIq0Kc",
+								vendedores : [
+											{
+												id:5,
+												nombre:"AUTRAL MOTOS",
+												direccion:"Alvarado 824",
+												telefono:"0291 452-1800",
+												latitud: -38.708323,
+												longitud: -62.271433
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											},
+											{
+												id: 1,
+												nombre:"ASSEN MOTOS",
+												direccion:"Brandsen 234",
+												telefono:"0291 456-5606",
+												latitud: -38.720988,
+												longitud: -62.256835
+											},
+											{
+												id:4,
+												nombre:"MotoZone",
+												direccion:"Villarino 555",
+												telefono:"0291 451-6792",
+												latitud: -38.728063,
+												longitud: -62.268129
+											},
+											]
+							},
+							{
+								id: 10,
+								tipo: "Naked",
+								marca: "Suzuki",
+								cilindraje: 125,
+								modelo:  "EN125-2a",
+								colores: ["#000000","#cc0000","#ffff00"],
+								rating: 3,
+								precio: 84000,
+								url_imagenes : [
+												"images/motos/naked/suzuki/125/EN_125/negro.jpg",
+												"images/motos/naked/suzuki/125/EN_125/rojo.jpg",
+												"images/motos/naked/suzuki/125/EN_125/amarillo.jpg"
+											   ],
+								url_video : "https://www.youtube.com/embed/rV7T_YNLy7c",
+								vendedores : [
+											{
+												id:5,
+												nombre:"AUTRAL MOTOS",
+												direccion:"Alvarado 824",
+												telefono:"0291 452-1800",
+												latitud: -38.708323,
+												longitud: -62.271433
+											}, 
+											{
+												id:3,
+												nombre:"KANDO",
+												direccion:"Av. Gral. D. Cerri 765",
+												telefono:"0291 452-8726",
+												latitud: -38.722134,
+												longitud: -62.255279
+											}
+											
+											]
 							}
 						]
 			};
